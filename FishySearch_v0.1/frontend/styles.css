@@ -1,0 +1,100 @@
+img {
+  max-width: 400px !important;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.truncatable {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.truncatable.expanded {
+  white-space: normal;
+  overflow: visible;
+  max-width: 600px;
+  background: #f8f9fa;
+}
+
+.no-truncate {
+  white-space: normal !important;
+}
+
+#resultTable {
+  margin-top: 20px;
+}
+
+/* Expandable Content Styles */
+.content-container {
+  position: relative;
+  padding-left: 25px;
+}
+
+.chevron {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chevron::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent #ff0000;
+  transition: all 0.2s ease;
+}
+
+.chevron.expanded::before {
+  transform: rotate(90deg);
+  margin-top: 2px;
+}
+
+.chevron.hidden {
+  display: none;
+}
+
+.content-text {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
+}
+
+.content-container.expandable .content-text {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-container.expanded .content-text {
+  white-space: normal;
+  overflow: visible;
+  max-width: 600px;
+}
+
+/* DataTable Overrides */
+.dataTables_wrapper {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.status-new {
+  color: #28a745;
+  font-weight: bold;
+}
+.status-no {
+  color: #6c757d;
+}

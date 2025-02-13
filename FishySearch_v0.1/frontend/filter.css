@@ -1,0 +1,85 @@
+.filter-system {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-column, .filter-operator {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-value {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-remove-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.filter-add-btn {
+  background: #444;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Save/Load Buttons */
+#saveState {
+  background: #2c3e50; /* Dark blue */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#loadState {
+  background: #228B22; /* Forest green */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Hover Effects */
+#saveState:hover {
+  background: #1a2937;
+}
+
+#loadState:hover {
+  background: #1c6b1c;
+}
+
+/* If using icons in buttons 
+#saveState::before {
+  content: "💾";
+  margin-right: 5px;
+}
+
+#loadState::before {
+  content: "↺";
+  margin-right: 5px;
+}*/
