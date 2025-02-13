@@ -1,3 +1,5 @@
+iOS only
+
 1. Download Pythonista 3
 2. put folder FishySearch on Pythonista Project
 3. make config.json under /config folder (community contribution)
